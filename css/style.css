@@ -20,6 +20,19 @@ body {
     font-size: 8rem;
 }
 
+.githubButton {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+.githubButton img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
 h1 {
     margin-bottom: 3rem;
 }
