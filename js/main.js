@@ -6,7 +6,7 @@ const time = document.getElementById('time'),
 
 // Show Time
 function showTime () {
-    let today = new Date(),
+    let today = new Date(), 
         hour = today.getHours(),
         min = today.getMinutes(),
         sec = today.getSeconds();
@@ -51,7 +51,7 @@ function setBgGreet() {
 
 // Get Name
 function getName() {
-    if(localStorage.getItem('name') === null) {
+    if(localStorage.getItem('name') === null || localStorage.getItem('name') === '') {
         name.textContent = '[Enter Name]';
     } else {
         name.textContent = localStorage.getItem('name');
@@ -74,7 +74,7 @@ function setName(e) {
 
 // Get Focus
 function getFocus() {
-    if(localStorage.getItem('focus') === null) {
+    if(localStorage.getItem('focus') === null || localStorage.getItem('focus') === '') {
         focus.textContent = '[Enter Focus]';
     } else {
         focus.textContent = localStorage.getItem('focus');
